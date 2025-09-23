@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-left">
+      <i class="fas fa-circle-notch"></i>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg" alt="Pokémon Logo" class="logo-center">
+    <div class="logo-right"></div>
+  </header>
+
+  <!-- CONTAINER -->
+  <main class="container">
+    <!-- Barra de busca -->
+    <div class="search-bar">
+      <button class="filter-btn"><i class="fas fa-filter"></i> Filter</button>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input id="searchInput" type="text" placeholder="Pesquisar Pokémon...">
+      </div>
+      <button class="elements-btn">Elements <i class="far fa-smile"></i></button>
+    </div>
+
+    <!-- Lista de Pokémon -->
+    <section class="pokemon-list" id="pokemon-list">
+      <!-- Renderizado via JS -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
