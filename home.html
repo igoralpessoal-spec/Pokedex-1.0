@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Black Modern Minimal</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/global.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="home" class="main-content-card">
+        
+        <header class="main-header">
+            <h1 class="header-title">POKEDEX</h1>
+            <nav class="main-nav">
+                <a href="#home" class="active" data-section="home">HOME</a>
+                <a href="#pokemons" data-section="pokemons">POKEMONS</a> 
+                <a href="#favoritos" data-section="favoritos">FAVORITOS</a> 
+                <a href="./index.html">Login</a> 
+            </nav>
+        </header>
+
+        <main class="container">
+            
+            <section class="hero-section" id="home"> 
+                <div class="hero-content">
+                    <h2 class="hero-headline">Explore</h2> 
+                    <p class="hero-subtext">Sua Jornada Pokémon Começa Aqui</p>
+                    <button class="hero-cta-button">Começar a Explorar</button>
+                </div>
+            </section>
+            
+            <section class="filters-section" id="pokemons"> 
+                <div class="search-box">
+                    <input type="text" id="pokemon-search" placeholder="Buscar Pokémon por nome ou ID..." class="search-input">
+                    <button class="search-button">
+                        &#9906; </button>
+                </div>
+                
+                <div id="type-filters" class="type-filters">
+                    </div>
+            </section>
+
+            <section id="pokedex-list" class="pokemon-grid">
+                </section>
+
+            <div class="load-more-container">
+                <button id="load-more-btn" class="hero-cta-button">Ver Mais 10 Pokémon</button>
+            </div>
+            
+            <section id="favoritos">
+                <h2 id="favorites-title" class="section-title">Minha Lista de Favoritos</h2>
+                <div id="fav-empty" class="fav-empty">
+                    <img src="assets/pika-img.png" alt="pikachu">
+                    <h5>Não há pokemons favoritos, experimente favoritar um pokemon!</h5>
+                </div>
+                <section id="favorites-list" class="pokemon-grid">
+                </section>
+            </section>
+
+        </main>
+    </div>
+    
+        <div id="pokemon-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="pokemon-details" class="details-content">
+                                <div class="loading-indicator">Carregando detalhes do Pokémon...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,35 @@
+:root {
+    --color-bg-main: #3C2B1D; /* Fundo geral da página (Ocre Escuro) */
+    --color-card-bg: #1A181C; /* Fundo do "card" principal (Preto Sutil) */
+    --color-text-light: #FAFAFA; /* Texto principal (Branco) */
+    --color-text-subtle: #888888; /* Texto secundário (Cinza) */
+    --color-accent-orange: #F5A623; /* Laranja/Amarelo vivo para destaques */
+    --color-accent-orange-darker: #E58C12; /* Laranja mais escuro para hover */
+    --color-line-subtle: #333333; /* Linhas de divisão mais escuras */
+    --color-gradient-start: #1A181C;
+    --color-gradient-end: #0A0A0A; /* Para um gradiente sutil no card principal */
+    --color-favorite-heart: #FF0077; /* Rosa Vívido */
+}
+
+/* --- 1. Reset e Estilo do Corpo/Card Principal --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML e Body */
+html {
+    scroll-padding-top: 100px; 
+    height: 100%; 
+}
+body {
+    background-color: var(--color-bg-main); 
+    color: var(--color-text-light);
+    font-family: 'Roboto Mono', monospace; 
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 0; 
+}
